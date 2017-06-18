@@ -28,7 +28,7 @@ module Jekyll
       end
 
       def site_title
-        @site_title ||= format_string(site["title"] || site["name"])
+        @site_title ||= format_string(site.data.general["title"] || site["name"])
       end
 
       def site_description
